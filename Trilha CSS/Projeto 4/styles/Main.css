@@ -1,0 +1,246 @@
+/* Estilo básico para todas as seções */
+.Section {
+    height: 55vh;
+    margin: 7px 0px;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#section_1 {
+    padding: 20px;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.Imagem_Section {
+    width: 50%;
+    height: 100% ;
+}
+
+.Imagem_Section img{
+    width: 100%;
+    height: 100%;
+}
+
+.Texto_Section {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.Texto_Section h1 {
+    width: 90%;
+    font-size: clamp(1em, 1em + 1.5vw, 2.5em);
+    font-weight: 800;
+}
+
+.Texto_Section p {
+    font-weight: 400;
+    font-size: clamp(0.5em, 0.5em + 1vw, 1em);
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/* Section 2*/
+
+#section_2 {
+    padding: 20px;
+    width: 100%;
+    height: 71vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/* Section 3*/
+
+#section_3 {
+    padding: 20px;
+    width: 100%;
+    height: 71vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+#section_3 p{
+    width: 90%;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/* Section 4*/
+
+#section_4 {
+    padding: 20px;
+    width: 100%;
+    height: 119vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+#section_4 .Texto_Section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_4 h1 {
+    width: 80%;
+    text-align: center;
+    font-family: 'Luckiest Guy';
+    font-size: clamp(1em, 1em + 1.7vw, 2.5em);
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+#section_4 p {
+    width: 76%;
+    text-align: center;
+    font-size: clamp(0.5em, 0.5em + 1vw, 1em);
+    line-height: 21.79px;
+}
+
+#section_4 .Imagem_Section {
+    width: 62%;
+    height: 90%;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+/* Media Query para tornar o design mais responsivo */
+
+@media screen and (max-width: 850px) {
+
+    /* Responsividade section 1*/
+
+    #section_1 {
+        flex-direction: column; /* Altera a direção da flexbox para vertical */
+        height: auto; /* Altura automática para ajuste de conteúdo */
+        padding: 10px; /* Reduz o padding para melhorar o layout em telas menores */
+    }
+
+    .Imagem_Section {
+        width: 90%; /* Largura total para se adaptar à tela */
+    }
+
+    .Texto_Section {
+        width: 100%; /* Largura total para se adaptar à tela */
+        text-align: left;
+    }
+
+    .Texto_Section h1 {
+        font-size: 25px; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1.2; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+
+    .Texto_Section p {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1.5; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+
+    /*----------------------------------------------------------------------------------------------------*/
+
+    /* Responsividade section 2*/
+
+    #section_2 {
+        flex-direction: column-reverse; /* Altera a direção da flexbox para vertical */
+        height: auto; /* Altura automática para ajuste de conteúdo */
+        padding: 10px; /* Reduz o padding para melhorar o layout em telas menores */
+    }
+
+    #p_section_2 {
+        width: 95%; /* Largura total para se adaptar à tela */
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1.5; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+
+    /*----------------------------------------------------------------------------------------------------*/
+
+    /* Responsividade section 3*/
+
+    #section_3 {
+        flex-direction: column; /* Altera a direção da flexbox para vertical */
+        height: auto; /* Altura automática para ajuste de conteúdo */
+        padding: 10px; /* Reduz o padding para melhorar o layout em telas menores */
+    }
+
+    /*----------------------------------------------------------------------------------------------------*/
+
+    /* Responsividade section 4*/
+
+    #section_4 {
+        flex-direction: column; /* Altera a direção da flexbox para vertical */
+        height: auto; /* Altura automática para ajuste de conteúdo */
+        padding: 10px; /* Reduz o padding para melhorar o layout em telas menores */
+    }
+
+    #section_4 .Texto_Section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section_4 h1 {
+        width: 100%;
+        text-align: left;
+        font-family: 'Luckiest Guy';
+        font-size: clamp(1em, 1em + 1.7vw, 2.5em);
+    }
+    
+    #section_4 p {
+        width: 100%;
+        text-align: left;
+        font-size: clamp(0.5em, 0.5em + 1.2vw, 1em);
+        line-height: 21.79px;
+    }
+    
+    #section_4 .Imagem_Section {
+        width: 90%;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    /* Ajustes específicos para telas menores na orientação paisagem */
+    .Texto_Section {
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .Texto_Section h1 {
+        font-size: 25px; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1.2; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+
+    .Texto_Section p {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1.5; /* Ajusta a altura da linha para melhor legibilidade */
+    }
+}
+
+
+
+
+
+
