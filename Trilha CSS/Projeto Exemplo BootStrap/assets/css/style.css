@@ -1,0 +1,58 @@
+:root {
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #146c43;
+}
+
+.btn{
+    --bs-btn-bg: #198754;
+    --bs-btn-border-color: #146c43;
+    --bs-btn-hover-bg: #146c43;
+    --bs-btn-hover-border-color: #146c43;
+    --bs-btn-active-bg: #0c5734;
+}
+
+main{
+    margin-top: 7rem;
+}
+
+.navbar-brand img{
+    width: 80px;
+}
+
+/* carrosel */
+
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 40%;
+}
+
+.carousel-item::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(31,31,31));
+    position: absolute;
+}
+
+@media screen and (max-width: 768px){
+
+    .carousel-item {
+        height: 350px;
+    }
+
+    .carousel-item img{
+        object-position: 50% 40px;
+    }
+    
+}
+
+.card-menu img{
+    height: 250px;
+    object-fit: cover;
+}
